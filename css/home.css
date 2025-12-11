@@ -1,0 +1,123 @@
+:root {
+    --bg: #0A0A0F;
+    --accent: #00FFCC;
+    --accent-hover: #0AFFC2;
+    --text: #E0E0E0;
+}
+
+@font-face {
+    font-family: "Bebas Neue";
+    src: url("../fonts/BebasNeue-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-Italic-VariableFont_opsz,wght.ttf") format("truetype");
+    font-style: italic;
+}
+
+body {
+    background: var(--bg);
+    margin: 0;
+    color: var(--text);
+    font-family: "Inter", sans-serif;
+
+    overflow-x: hidden;  /* evita scroll horizontal */
+}
+
+.navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: calc(100% - 40px); /* más ancho sin salir de pantalla */
+    max-width: 1500px;
+
+    padding: 15px 40px;
+
+    background: rgba(30, 30, 49, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+
+    z-index: 999;
+}
+
+.logo {
+    height: 80px;
+    width: auto;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-links a {
+    display: inline-block;
+    color: var(--accent) ;
+    text-decoration: none;
+    font-weight: 500;
+
+    transition: transform 0.3s ease;
+}
+
+.nav-links a:hover {
+    transform: translateY(-4px);
+}
+
+main {
+    padding-top: 120px; 
+}
+
+.home-grid {
+    max-width: 1585px;
+    margin: 0 auto;  
+    padding: 40px 20px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.grande-horizontal {
+    background: rgba(30, 30, 49, 0.6);
+    border-radius: 10px;
+
+    grid-column: 2 / span 2;
+    height: 250px;
+
+    padding: 15px 15px;
+}
+.izquierda-alta {
+    background: rgba(30, 30, 49, 0.6);
+    border-radius: 10px; 
+
+    grid-column: 1;
+    grid-row: 1 / 3;
+    height: 550px;
+}
+
+.derecha-mini {
+    background: rgba(30, 30, 49, 0.6);
+    border-radius: 10px;
+
+    height: 200px;
+}
+
+.izquierda-mini {
+    background: rgba(30, 30, 49, 0.6);
+    border-radius: 10px;
+
+    grid-column: 3;
+    grid-row: 2;
+
+    height: 300px;
+}
