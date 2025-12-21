@@ -1,0 +1,73 @@
+:root {
+    --bg: #0A0A0F;
+    --accent: #00FFCC;
+    --accent-hover: #0AFFC2;
+    --text: #E0E0E0;
+}
+
+@font-face {
+    font-family: "Merriweather Regular";
+    src: url("../fonts/Merriweather_24pt_SemiCondensed-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Orbitron Bold";
+    src: url("../fonts/Orbitron-Bold.ttf") format("truetype");
+}
+
+body {
+    background: var(--bg);
+    margin: 0;
+    color: var(--text);
+
+    overflow-x: hidden;
+}
+
+.navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: calc(100% - 40px); /* más ancho sin salir de pantalla */
+    max-width: 1500px;
+
+    padding: 15px 40px;
+
+    background: rgba(30, 30, 49, 0.6);
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+
+    z-index: 999;
+}
+
+.logo {
+    height: 80px;
+    width: auto;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-links a {
+    display: inline-block;
+    color: var(--accent) ;
+    text-decoration: none;
+    font-weight: 500;
+
+    transition: transform 0.3s ease;
+}
+
+.nav-links a:hover {
+    transform: translateY(-4px);
+}
+
+main {
+    padding-top: 120px; 
+}
