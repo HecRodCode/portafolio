@@ -6,7 +6,7 @@ Welcome to my personal portfolio! My name is **Hector Hernan Rios Rodriguez**, a
 
 ## 🌐 Live Portfolio
 Explore my work online:  
-https://yourusername.github.io/your-portfolio/
+https://hecrodcode.github.io/portafolio/
 
 ---
 
