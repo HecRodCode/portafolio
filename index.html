@@ -1,198 +1,765 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rod | Portfolio</title>
+    <link rel="icon" type="imagen/png" href="./assets/images/favicon.png" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- === HERO === -->
+    <header class="hero-content hero">
+      <!-- === NAV === -->
+      <nav class="nav">
+        <ul class="nav-links">
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Proyects</a></li>
+          <li><a href="#skills">Skills</a></li>
+        </ul>
+      </nav>
 
-    <!-- STYLES -->
-    <link rel="stylesheet" href="./css/proyects.css">
-    <title>Proyects</title> <!-- PAGE TITLE -->
-</head>
-<body>
+      <!-- === HERO CONTENT === -->
+      <section class="hero-stage">
+        <!-- LEFT COLUMN: TEXT Y SOCIALS -->
+        <div class="hero-info">
+          <h1 class="hero-name">Hi, I'm Héctor</h1>
+          <h2 class="hero-role">Frontend <span>Developer</span> | Student</h2>
 
-    <!-- NAVIGATION HEADER -->
-    <header>
-        <nav class="navbar">
-            <img class="logo" src="./assets/logo.png" alt="Logo de Rod">
-            <ul class="nav-links">
-                <li><a href="about-me.html">About Me</a></li>
-                <li><a href="#home">Home</a></li>
-                <li><a href="index.html">Proyects</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+          <p class="hero-tagline">
+            I build interactive and functional web applications, from management
+            systems to dynamic prototypes.<br />
+            Experienced with CRUD operations, state management, responsive
+            design, and JavaScript logic.
+          </p>
+
+          <div class="hero-socials">
+            <a href="./assets/docs/CV.pdf" download class="btn-download">
+              <span>Download CV</span> &#x2B07;
+            </a>
+
+            <a
+              href="https://github.com/HecRodCode"
+              target="_blank"
+              class="social-body"
+            >
+              <img
+                src="./assets/icons/github.svg"
+                alt="GitHub"
+                class="social-icon"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/tu-perfil/"
+              target="_blank"
+              class="social-body"
+            >
+              <img
+                src="./assets/icons/linkedin.svg"
+                alt="LinkedIn"
+                class="social-icon"
+              />
+            </a>
+            <a href="mailto:hecrodcode@gmail.com" class="social-body">
+              <img
+                src="./assets/icons/email.png"
+                alt="Email"
+                class="social-icon"
+              />
+            </a>
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN: AVATAR -->
+        <div class="hero-avatar">
+          <img
+            src="./assets/images/avatar.png"
+            alt="Avatar de Rod"
+            class="avatar-img"
+          />
+          <div class="avatar-glow glow-red"></div>
+          <div class="avatar-glow glow-blue"></div>
+        </div>
+      </section>
     </header>
 
+    <main>
+      <!-- === ABOUT ME === -->
+      <section id="about" class="section about-grid">
+        <article class="about-text">
+          <div class="section-header">
+            <span class="line left"></span>
+            <h2 class="gradient-text">About Me</h2>
+            <span class="line right"></span>
+          </div>
 
-    <!-- PROYECTS SECTION -->
-    <section id="proyectos" class="proyectos-container">
+          <div class="about-content">
+            <p class="lead">
+              I am from the city of <strong>Medellín</strong>, and I study
+              development at <strong>Riwi</strong>. At 19 years old, I have
+              found programming to be the perfect outlet for my logical mindset,
+              focusing on creating solutions that are as efficient as they are
+              scalable.
+            </p>
 
-        <!-- PYTHON -->
-        <div class="proyecto-modulo">
-            <div class="modulo-header" style="background-image: url('./assets/python.jpg');">
-                <h2 class="lenguaje-titulo">Python</h2>
+            <div class="personal-info">
+              <p class="lead">
+                Software development student from <strong>Medellín</strong>,
+                currently studying at <strong>Riwi</strong>. Focused on building
+                <strong>clean, efficient, and scalable solutions</strong>.
+              </p>
+
+              <p class="personal-info">
+                Analytical mindset shaped by chess and history, with strong
+                attention to detail. Motivated daily by my cats,
+                <strong>Crispy and Choco</strong>.
+              </p>
             </div>
 
-            <div class="modulo-content">
-                <!-- MODULE ACTIVITIES -->
-                <div class="proyecto-item">
-                    <span class="proyecto-nombre">EcoRide – Simulador de alquiler de bicicletas sostenibles</span>
-                    <a href="https://github.com/Crud-Activitys/CrudActivity-EcoRide" target="_blank" class="github-link" rel="noopener">
-                        Ver Código
-                    </a>
-                </div>
+            <p class="goal">
+              Currently, I am dedicated to mastering
+              <strong>emerging technologies</strong> to transform complex ideas
+              into <span>functional</span> and <span>elegant</span> software.
+            </p>
+          </div>
+        </article>
+      </section>
 
-                <div class="proyecto-item">
-                    <span class="proyecto-nombre">Ejercicios de flujo</span>
-                    <a href="https://github.com/HecRodCode/Ejercicios-de-flujo" target="_blank" class="github-link" rel="noopener">
-                        Ver Código
-                    </a>
-                </div>
-
-                <div class="proyecto-item">
-                    <span class="proyecto-nombre">Estructura de datos Python</span>
-                    <a href="https://github.com/Crud-Activitys/CrudActivity-CrudData" target="_blank" class="github-link" rel="noopener">
-                        Ver Código
-                    </a>
-                </div>
-
-                <div class="proyecto-item">
-                    <span class="proyecto-nombre">Juego demo Wildbound</span>
-                    <a href="https://github.com/JulianAponte/wildbound_game" target="_blank" class="github-link" rel="noopener">
-                        Ver Código
-                    </a>
-                </div>
-
-                <div class="proyecto-item">
-                    <span class="proyecto-nombre">PeopleOps</span>
-                    <a href="https://github.com/Crud-Activitys/CrudActivity-People-Vacations" target="_blank" class="github-link" rel="noopener">
-                        Ver Código
-                    </a>
-                </div>
-
-                <div class="proyecto-item">
-                    <span class="proyecto-nombre">Historia de usuario (Semana 1)</span>
-                    <a href="https://github.com/HecRodCode/HDU-1.PY" target="_blank" class="github-link" rel="noopener">
-                        Ver Código
-                    </a>
-                </div>
-
-                <div class="proyecto-item">
-                    <span class="proyecto-nombre">Historia de usuario (Semana 2)</span>
-                    <a href="https://github.com/HecRodCode/HDU-2.PY" target="_blank" class="github-link" rel="noopener">
-                        Ver Código
-                    </a>
-                </div>
-
-                <div class="proyecto-item">
-                    <span class="proyecto-nombre">Historia de usuario (Semana 3)</span>
-                    <a href="https://github.com/HecRodCode/HDU-3.PY" target="_blank" class="github-link" rel="noopener">
-                        Ver Código
-                    </a>
-                </div>
-            </div>
-
-            <!-- ACTION ICON -->
-            <div class="modulo-footer">
-                <div class="flecha">▼</div>
-            </div>
+      <!-- PROJECTS -->
+      <section id="projects" class="section projects">
+        <div class="section-header">
+          <span class="line left"></span>
+          <h2 class="gradient-text">Proyects</h2>
+          <span class="line right"></span>
         </div>
 
-        <!--- HTML & CSS --->
-        <div class="proyecto-modulo">
-            <div class="modulo-header" style="background-image: url('./assets/HTML&CSS.png');">
-                <h1 class="lenguaje-titulo">HTML & CSS</h1>
+        <!-- Tabs de módulos -->
+        <nav class="projects-tabs">
+          <button class="tab-btn active" data-module="python">Python</button>
+          <button class="tab-btn" data-module="html-css">HTML5 & CSS3</button>
+          <button class="tab-btn" data-module="js">JavaScript</button>
+          <button class="tab-btn" data-module="db">Databases</button>
+        </nav>
+
+        <!-- Grid de proyectos -->
+        <div class="projects-grid">
+          <!-- ============================== PYTHON ============================== -->
+          <article class="project-card" data-module="python">
+            <img
+              src="./assets/images/proyects/ecoride.png"
+              alt="Python App"
+              class="project-img"
+            />
+            <div class="project-content">
+              <h3>CRUDZASO-EcoRide</h3>
+              <p>
+                I built a bike rental program in
+                <span class="highlight-red">Python</span> to calculate fees,
+                apply discounts or penalties, and track payments, learning
+                <span class="highlight-red">conditionals</span> and
+                <span class="highlight-red">loops</span>.
+              </p>
+
+              <div class="projects-footer">
+                <div class="project-tags">
+                  <span>Python</span>
+                </div>
+                <!-- Link a GitHub -->
+                <div class="project-actions">
+                  <a
+                    href="https://github.com/HecRodCode/CRUDZASO-EcoRide"
+                    target="_blank"
+                    class="github-link"
+                  >
+                    <img
+                      src="./assets/icons/github.svg"
+                      alt="GitHub Repo"
+                      class="github-icon"
+                    />
+                  </a>
+                </div>
+              </div>
             </div>
+          </article>
 
-            <div class="modulo-content">
-                <!-- MODULE ACTIVITIES -->
-                <div class="proyecto-item">
-                    <span class="proyecto-nombre">CRUDscope MediaPanel</span>
-                    <div class="proyecto-links">
-                        <a href="https://github.com/Crud-Activitys/CRUDScope-HTML" target="_blank" class="github-link" rel="noopener">
-                            Ver Código
-                        </a>
+          <article class="project-card" data-module="python">
+            <img
+              src="./assets/images/proyects/cruddata.png"
+              alt="HTML CSS Project"
+              class="project-img"
+            />
+            <div class="project-content">
+              <h3>CRUDZASO-CrudData</h3>
+              <p>
+                I created CrudData, a
+                <span class="highlight-red">Python</span> project with exercises
+                on <span class="highlight-red">lists</span>,
+                <span class="highlight-red">dictionaries</span>, and
+                <span class="highlight-red">match-case</span>, helping me
+                practice <span class="highlight-red">data structures</span> and
+                control flow.
+              </p>
 
-                        <a href="https://crud-activitys.github.io/CRUDScope-HTML/" target="_blank" class="demo-link" rel="noopener">
-                            Ver Demo
-                        </a>
-                    </div>
+              <div class="projects-footer">
+                <div class="project-tags">
+                  <span>Python</span>
                 </div>
-
-                <div class="proyecto-item">
-                    <span class="proyecto-nombre">CRUDactivity-MiniOS</span>
-                    <div class="proyecto-links">
-                        <a href="https://github.com/Crud-Activitys/CrudActivity---Mini-OS" target="_blank" class="github-link" rel="noopener">
-                            Ver Código
-                        </a>
-
-                        <a href="https://crud-activitys.github.io/CrudActivity---Mini-OS/" target="_blank" class="demo-link" rel="noopener">
-                            Ver Demo
-                        </a>
-                    </div>
+                <!-- Link a GitHub -->
+                <div class="project-actions">
+                  <a
+                    href="https://github.com/HecRodCode/CRUDZASO-CrudData"
+                    target="_blank"
+                    class="github-link"
+                  >
+                    <img
+                      src="./assets/icons/github.svg"
+                      alt="GitHub Repo"
+                      class="github-icon"
+                    />
+                  </a>
                 </div>
-
-                <div class="proyecto-item">
-                    <span class="proyecto-nombre">CRUDactivity-StoreCrud</span>
-                    <div class="proyecto-links">
-                        <a href="https://github.com/Crud-Activitys/CRUDactivity-StoreCrud" target="_blank" class="github-link" rel="noopener">
-                            Ver Código
-                        </a>
-
-                        <a href="https://crud-activitys.github.io/CRUDactivity-StoreCrud/" target="_blank" class="demo-link" rel="noopener">
-                            Ver Demo
-                        </a>
-                    </div>
-                </div>
-
-                <div class="proyecto-item">
-                    <span class="proyecto-nombre">Historia de usuario (Semana 1)</span>
-                    <div class="proyecto-links">
-                        <a href= "https://github.com/HecRodCode/SDH-1.HTML" target="_blank" class="github-link" rel="noopener">
-                            Ver Código
-                        </a>
-
-                        <a href="https://hecrodcode.github.io/SDH-1.HTML/" target="_blank" class="demo-link" rel="noopener">
-                            Ver Demo
-                        </a>
-                    </div>
-                </div>
-
-                <div class="proyecto-item">
-                    <span class="proyecto-nombre">Historia de usuario (Semana 2)</span>
-                    <div class="proyecto-links">
-                        <a href="https://github.com/HecRodCode/HDU-2.HTML" target="_blank" class="github-link" rel="noopener">
-                            Ver Código
-                        </a>
-
-                        <a href="https://hecrodcode.github.io/HDU-2.HTML/index.html" target="_blank" class="demo-link" rel="noopener">
-                            <span>Ver Demo</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="proyecto-item">
-                    <span class="proyecto-nombre">Historia de usuario (Semana 3)</span>
-                    <div class="proyecto-links">
-                        <a href="https://github.com/HecRodCode/HDU-3.HTML" target="_blank" class="github-link" rel="noopener">
-                            Ver Código
-                        </a>
-
-                        <a href="https://hecrodcode.github.io/HDU-3.HTML/" target="_blank" class="demo-link" rel="noopener">
-                            <span>Ver Demo</span>
-                        </a>
-                    </div>
-                </div>
+              </div>
             </div>
+          </article>
 
-            <!-- ACTION ICON -->
-            <div class="modulo-footer">
-                <div class="flecha">▼</div>
+          <article class="project-card" data-module="python">
+            <img
+              src="./assets/images/proyects/crudcycles.png"
+              alt="HTML CSS Project"
+              class="project-img"
+            />
+            <div class="project-content">
+              <h3>CRUDZASO-Cycles</h3>
+              <p>
+                I created CRUDCycles, a
+                <span class="highlight-red">Python</span> project with exercises
+                on <span class="highlight-red">loops</span>,
+                <span class="highlight-red">break</span> and
+                <span class="highlight-red">continue</span>, helping me practice
+                <span class="highlight-red">control flow</span> and programming
+                logic.
+              </p>
+
+              <div class="projects-footer">
+                <div class="project-tags">
+                  <span>Python</span>
+                </div>
+                <!-- Link a GitHub -->
+                <div class="project-actions">
+                  <a
+                    href="https://github.com/HecRodCode/CRUDZASO-PythonBasics"
+                    target="_blank"
+                    class="github-link"
+                  >
+                    <img
+                      src="./assets/icons/github.svg"
+                      alt="GitHub Repo"
+                      class="github-icon"
+                    />
+                  </a>
+                </div>
+              </div>
             </div>
+          </article>
+
+          <article class="project-card" data-module="python">
+            <img
+              src="./assets/images/proyects/peopleOps.png"
+              alt="HTML CSS Project"
+              class="project-img"
+            />
+            <div class="project-content">
+              <h3>CRUDZASO-PeopleOps Vacation Console</h3>
+              <p>
+                I built PeopleOps Vacation Console, a
+                <span class="highlight-red">Python</span> console application to
+                manage <span class="highlight-red">employees</span> and
+                <span class="highlight-red">vacation requests</span>, calculate
+                available days, and store data using
+                <span class="highlight-red">CSV</span> files, strengthening my
+                skills in <span class="highlight-red">control flow</span> and
+                data handling.
+              </p>
+
+              <div class="projects-footer">
+                <div class="project-tags">
+                  <span>Python</span>
+                </div>
+                <!-- Link a GitHub -->
+                <div class="project-actions">
+                  <a
+                    href="https://github.com/HecRodCode/CRUDZASO-PeopleVacations"
+                    target="_blank"
+                    class="github-link"
+                  >
+                    <img
+                      src="./assets/icons/github.svg"
+                      alt="GitHub Repo"
+                      class="github-icon"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-module="python">
+            <img
+              src="./assets/images/proyects/riwi.webp"
+              alt="HTML CSS Project"
+              class="project-img"
+            />
+            <div class="project-content">
+              <h3>HDU-M1</h3>
+              <p>
+                I worked on a project based on
+                <span class="highlight-red">user stories</span>, where
+                developers create exercises aligned with weekly topics studied
+                on <span class="highlight-red">Moodle</span>, helping me apply
+                <span class="highlight-red">theoretical concepts</span> to
+                practical coding tasks and reinforce my learning process.
+              </p>
+
+              <div class="projects-footer">
+                <div class="project-tags">
+                  <span>Python</span>
+                  <!-- Link a GitHub -->
+                </div>
+                <div class="project-actions">
+                  <a
+                    href="https://github.com/HecRodCode/M1-SDU"
+                    target="_blank"
+                    class="github-link"
+                  >
+                    <img
+                      src="./assets/icons/github.svg"
+                      alt="GitHub Repo"
+                      class="github-icon"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- ============================== HTML & CSS ============================== -->
+          <article class="project-card" data-module="html-css">
+            <img
+              src="./assets/images/proyects/almers.png"
+              alt="HTML CSS Project"
+              class="project-img"
+            />
+            <div class="project-content">
+              <h3>Almers</h3>
+              <p>
+                I worked on a collaborative web project using
+                <span class="highlight-red">HTML</span>,
+                <span class="highlight-red">CSS</span>, and a bit of
+                <span class="highlight-red">JavaScript</span> to present an
+                original
+                <span class="highlight-red">fantasy universe</span> with
+                immersive lore, interactive navigation, and visual storytelling
+                across multiple realms.
+              </p>
+
+              <div class="projects-footer">
+                <div class="project-tags">
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                  <span>JavaScript</span>
+                </div>
+
+                <div class="project-actions">
+                  <a
+                    href="https://hecrodcode.github.io/Almers/"
+                    target="_blank"
+                    class="btn btn-demo btn-sm"
+                  >
+                    Demo
+                  </a>
+
+                  <a
+                    href="https://github.com/HecRodCode/Almers"
+                    target="_blank"
+                    class="github-link"
+                  >
+                    <img
+                      src="./assets/icons/github.svg"
+                      alt="GitHub Repo"
+                      class="github-icon"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-module="html-css">
+            <img
+              src="./assets/images/proyects/storecrud.png"
+              alt="HTML CSS Project"
+              class="project-img"
+            />
+            <div class="project-content">
+              <h3>CRUDSTORE</h3>
+              <p>
+                I developed <span class="highlight-red">StoreCrud</span>, a
+                frontend project focused on translating a
+                <span class="highlight-red">Figma design</span> into a
+                responsive interface using
+                <span class="highlight-red">HTML</span> and
+                <span class="highlight-red">CSS</span>. This project helped me
+                strengthen my understanding of
+                <span class="highlight-red">layout structure</span>, spacing,
+                and <span class="highlight-red">visual consistency</span> for
+                portfolio-ready web interfaces.
+              </p>
+
+              <div class="projects-footer">
+                <div class="project-tags">
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                </div>
+
+                <div class="project-actions">
+                  <a
+                    href="https://hecrodcode.github.io/CRUDZASO-StoreCrud/"
+                    target="_blank"
+                    class="btn btn-demo btn-sm"
+                  >
+                    Demo
+                  </a>
+
+                  <a
+                    href="https://github.com/HecRodCode/CRUDZASO-StoreCrud"
+                    target="_blank"
+                    class="github-link"
+                  >
+                    <img
+                      src="./assets/icons/github.svg"
+                      alt="GitHub Repo"
+                      class="github-icon"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-module="html-css">
+            <img
+              src="./assets/images/proyects/novaOS.png"
+              alt="HTML CSS Project"
+              class="project-img"
+            />
+            <div class="project-content">
+              <h3>Nova OS</h3>
+              <p>
+                I worked on <span class="highlight-red">Nova OS</span>, a
+                collaborative web project that recreates a functional
+                <span class="highlight-red"
+                  >macOS-inspired operating system</span
+                >
+                directly in the browser using
+                <span class="highlight-red">HTML</span>,
+                <span class="highlight-red">CSS</span>, and
+                <span class="highlight-red">JavaScript</span>. The system
+                features a dynamic desktop, dock, window management, and
+                multiple integrated apps, strengthening my skills in
+                <span class="highlight-red">UI architecture</span>,
+                <span class="highlight-red">modular design</span>, and
+                interactive frontend development.
+              </p>
+
+              <div class="projects-footer">
+                <div class="project-tags">
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                  <span>JavaScript</span>
+                </div>
+
+                <div class="project-actions">
+                  <a
+                    href="https://hecrodcode.github.io/CRUDZASO-MiniOS/"
+                    target="_blank"
+                    class="btn btn-demo btn-sm"
+                  >
+                    Demo
+                  </a>
+
+                  <a
+                    href="https://github.com/HecRodCode/CRUDZASO-MiniOS"
+                    target="_blank"
+                    class="github-link"
+                  >
+                    <img
+                      src="./assets/icons/github.svg"
+                      alt="GitHub Repo"
+                      class="github-icon"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-module="html-css">
+            <img
+              src="./assets/images/proyects/riwi.webp"
+              alt="HTML CSS Project"
+              class="project-img"
+            />
+            <div class="project-content">
+              <h3>HDU-M2</h3>
+              <p>
+                I worked on a project based on
+                <span class="highlight-red">user stories</span>, where
+                developers create exercises aligned with weekly topics studied
+                on <span class="highlight-red">Moodle</span>, helping me apply
+                <span class="highlight-red">theoretical concepts</span> to
+                practical coding tasks and reinforce my learning process.
+              </p>
+
+              <div class="projects-footer">
+                <div class="project-tags">
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                  <span>JavaScript</span>
+                  <!-- Link a GitHub -->
+                </div>
+                <div class="project-actions">
+                  <a
+                    href="https://github.com/HecRodCode/M2-HDU"
+                    target="_blank"
+                    class="github-link"
+                  >
+                    <img
+                      src="./assets/icons/github.svg"
+                      alt="GitHub Repo"
+                      class="github-icon"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- ============================== JAVASCRIPT ============================== -->
+          <article class="project-card" data-module="js">
+            <img
+              src="./assets/images/proyects/habitsHub.png"
+              alt="HTML CSS Project"
+              class="project-img"
+            />
+            <div class="project-content">
+              <h3>HabitsHub</h3>
+              <p>
+                I built <span class="highlight-red">HabitFlow</span>, a
+                frontend-only habit tracking application using
+                <span class="highlight-red">HTML</span>,
+                <span class="highlight-red">CSS</span>, and
+                <span class="highlight-red">Vanilla JavaScript</span>, focused
+                on <span class="highlight-red">DOM manipulation</span>,
+                <span class="highlight-red">authentication flow</span>, and
+                browser data persistence with
+                <span class="highlight-red">localStorage</span> and
+                <span class="highlight-red">sessionStorage</span>.
+              </p>
+
+              <div class="projects-footer">
+                <div class="project-tags">
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                  <span>JavaScript</span>
+                </div>
+
+                <div class="project-actions">
+                  <a
+                    href="https://hecrodcode.github.io/CRUDZASO-HabitFlow/"
+                    target="_blank"
+                    class="btn btn-demo btn-sm"
+                  >
+                    Demo
+                  </a>
+
+                  <a
+                    href="https://github.com/HecRodCode/CRUDZASO-HabitFlow"
+                    target="_blank"
+                    class="github-link"
+                  >
+                    <img
+                      src="./assets/icons/github.svg"
+                      alt="GitHub Repo"
+                      class="github-icon"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-module="js">
+            <img
+              src="./assets/images/proyects/ideaHub.png"
+              alt="HTML CSS Project"
+              class="project-img"
+            />
+            <div class="project-content">
+              <h3>IdeaHub</h3>
+              <p>
+                I worked on <span class="highlight-red">IdeaHub</span>, a
+                collaborative frontend platform built with
+                <span class="highlight-red">HTML</span>,
+                <span class="highlight-red">CSS</span>, and
+                <span class="highlight-red">Vanilla JavaScript</span>, focused
+                on <span class="highlight-red">user authentication</span>,
+                <span class="highlight-red">ideas CRUD</span>, dynamic
+                <span class="highlight-red">DOM manipulation</span>, and
+                <span class="highlight-red">team collaboration</span> using
+                <span class="highlight-red">Git Flow</span> and
+                <span class="highlight-red">Conventional Commits</span>.
+              </p>
+
+              <div class="projects-footer">
+                <div class="project-tags">
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                  <span>JavaScript</span>
+                </div>
+
+                <div class="project-actions">
+                  <a href="" target="_blank" class="btn btn-demo btn-sm">
+                    Demo
+                  </a>
+
+                  <a
+                    href="https://github.com/HecRodCode/CRUDZASO-IdeaHub"
+                    target="_blank"
+                    class="github-link"
+                  >
+                    <img
+                      src="./assets/icons/github.svg"
+                      alt="GitHub Repo"
+                      class="github-icon"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-module="js">
+            <img
+              src="./assets/images/proyects/riwi.webp"
+              alt="HTML CSS Project"
+              class="project-img"
+            />
+            <div class="project-content">
+              <h3>HDU-M3</h3>
+              <p>
+                I worked on a project based on
+                <span class="highlight-red">user stories</span>, where
+                developers create exercises aligned with weekly topics studied
+                on <span class="highlight-red">Moodle</span>, helping me apply
+                <span class="highlight-red">theoretical concepts</span> to
+                practical coding tasks and reinforce my learning process.
+              </p>
+
+              <div class="projects-footer">
+                <div class="project-tags">
+                  <span>JavaScript</span>
+                  <!-- Link a GitHub -->
+                </div>
+                <div class="project-actions">
+                  <a
+                    href="https://github.com/HecRodCode/M3-HDU"
+                    target="_blank"
+                    class="github-link"
+                  >
+                    <img
+                      src="./assets/icons/github.svg"
+                      alt="GitHub Repo"
+                      class="github-icon"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Databases -->
         </div>
-    </section>
+      </section>
 
-    <!-- CRIPTS -->
-    <script src="./js/proyects.js"></script>
-</body>
+      <!-- === SKILLS === -->
+      <section id="skills" class="section skills-container">
+        <div class="section-header">
+          <span class="line left"></span>
+          <h2 class="gradient-text">Skills</h2>
+          <span class="line right"></span>
+        </div>
+
+        <div class="skills-wrapper">
+          <div class="skills-category">
+            <h3>Intermediate</h3>
+            <div class="skills-flow">
+              <div class="skill-item">
+                <div class="icon-wrapper">
+                  <img src="./assets/icons/python.png" alt="Python" />
+                </div>
+                <span>Python</span>
+              </div>
+
+              <div class="skill-item">
+                <div class="icon-wrapper">
+                  <img src="./assets/icons/html.png" alt="HTML5" />
+                </div>
+                <span>HTML5</span>
+              </div>
+
+              <div class="skill-item">
+                <div class="icon-wrapper">
+                  <img src="./assets/icons/css.png" alt="CSS3" />
+                </div>
+                <span>CSS3</span>
+              </div>
+
+              <div class="skill-item">
+                <div class="icon-wrapper">
+                  <img src="./assets/icons/js.png" alt="JavaScript" />
+                </div>
+                <span>JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-category">
+            <h3>Learning</h3>
+            <div class="skills-flow">
+              <div class="skill-item learning">
+                <div class="icon-wrapper">
+                  <img src="./assets/icons/bootstrap.png" alt="Bootstrap" />
+                </div>
+                <span>Bootstrap</span>
+              </div>
+
+              <div class="skill-item learning">
+                <div class="icon-wrapper">
+                  <img src="./assets/icons/nodejs.png" alt="Node.js" />
+                </div>
+                <span>Node.js</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section contact">
+        <p>© Developed by Hector</p>
+      </section>
+
+      <script src="./js/app.js"></script>
+    </main>
+  </body>
 </html>
